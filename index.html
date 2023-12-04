@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7250a64f02.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="nav">
+            <nav>
+                <img src="images/logo1.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+        <div class="container">
+            <div class="header-text">
+                <h1>Hi, I am <span class="auto-input"></span></h1>
+                <p class="header-text-1">I'm always eager to collaborate on exciting projects or discuss how I can help bring your ideas to fruition. Feel free to reach out—I'd love to hear from you!</p>
+            </div>
+            
+            <div class="header-buttons">
+                <div class="button">
+                    <a href="#contact" class="btn btn2">Contact Me</a>
+                </div>
+                <div class="button">
+                    <a href="images/Vamsi_Muraparthi_Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-downs">
+            <div class="mousey" id="scrollToAbout">
+              <div class="scroller"></div>
+            </div>
+          </div>
+    </div>
+    
+    <!-- --------------about-------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user1.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="about-text">I'm Vamsi Muraparthi, a Web Developer and UI/UX Designer passionate about crafting engaging digital experiences. Skilled in wireframing, prototyping, and usability testing, I bring ideas to life using tools like Illustrator, Photoshop, HTML, CSS, JavaScript, React, and Node.js. From visual design to motion graphics, my expertise spans various domains. My journey includes pivotal roles, from contributing as a Deep Learning Engineer to leading impactful projects as a Chief Designer. With a Bachelor's in Computer Science, I've spearheaded website redesigns and developed apps, earning certifications in Python, Data Structures, and Full Stack Development along the way. As an avid problem solver on LeetCode and a leader in National Level Hackathons, I'm committed to innovation and continual learning.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links"onclick="opentab('education')">Education</p>
+                    </div>    
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App Interface</li>
+                            <li><span>Web Development</span><br>Developing website</li>
+                            <li><span>App Development</span><br>Developing Applications</li>
+                            <li><span>Machine Learning</span><br>Developing and Researching Machine Learning Applications</li>
+                        </ul>
+                    </div> 
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>March 2023 - August 2023</span><br>Proximal Soilsens Technologies Pvt Ltd</li>
+                            <li><span>July 2022 - September 2022</span><br>Henotic Technologies Pvt Ltd</li>
+                        </ul>
+                    </div>    
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020 - 2024 (Computer Science and Engineering)</span><br>Sagi Ramakrishnam Raju Engineering College</li>
+                            <li><span>2018 - 2020 (12th Standard)</span><br>Jawahar Navodaya Vidhyalaya</li>
+                        </ul>
+                    </div>                 
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- --------------------services----------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Crafting exceptional websites is at the heart of what I do best. With a meticulous approach to development and a keen eye for detail, I specialize in creating websites that seamlessly merge cutting-edge technology with user-centric design. Each project becomes a canvas for me to weave together code and creativity, resulting in responsive, visually appealing, and highly functional websites. My dedication to staying abreast of the latest web development trends ensures that every site I build is not just good but sets the bar high for innovation and user experience.</p>
+                    <a href="#">learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Mastering both UI (User Interface) and UX (User Experience), I take pride in crafting captivating digital experiences. With an acute focus on UI design, I excel in creating visually stunning interfaces that harmoniously blend form and function. Beyond aesthetics, my passion for UX allows me to ensure that every design decision contributes meaningfully to the overall user journey, resulting in seamless and intuitive experiences. Whether it's wireframing, prototyping, or usability testing, my commitment to both UI and UX principles enables me to create designs that resonate and leave a lasting impression.</p>
+                    <a href="#">learn more</a>
+                </div>
+
+            
+                <div>
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <h2>Machine Learning</h2>
+                    <p>Developing groundbreaking Machine Learning applications is where my passion and expertise converge. With a deep understanding of ML algorithms and a knack for harnessing data's potential, I specialize in crafting applications that leverage the power of AI to solve complex problems. From predictive analytics to computer vision and natural language processing, my commitment to pushing the boundaries of innovation drives me to create ML applications that are not only robust but also intuitive and impactful. Each project presents an opportunity for me to explore new techniques and algorithms.</p>
+                    <a href="#">learn more</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------------------portfolio---------------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Surveillance Camera Storage Optimization</h3>
+                        <p>"Empowering Surveillance: Innovating Storage Efficiency with AI Insight"
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Prajwalan 2K23 Website</h3>
+                        <p>"Unleash Your Creativity: Code, Collaborate, and Innovate!"
+                        </p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Pot Hole detection app</h3>
+                        <p>"Smoothing the Ride: Paving the Way to Safer Roads"</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- -----------------------contact--------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p> <i class="fa-solid fa-paper-plane"></i> vamsimuraparthi@gmail.com</p>
+                    <p> <i class="fa-solid fa-phone-volume"></i> 9502772618</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Vamsi_Muraparthi_Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @Vamsi_Muraparthi</p>
+        </div>
+    </div>
+
+    <!-------------------------scripts--------------------------->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+   
+   <script>
+        var typed = new Typed(".auto-input", {
+            strings: ["Vamsi Muraparthi", "UI Designer", "Web Developer", "Machine Learning Researcher"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true
+        })
+    </script>
+
+
+    <script>
+        
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
+    </script>
+
+
+    <script>
+        ScrollReveal({
+            reset: true,
+            distance: '60px',
+            duration: 2500,
+            delay: 400
+        });
+
+        ScrollReveal().reveal('.sub-title,.about-col-1', {delay: 50, origin: 'left'});
+        ScrollReveal().reveal('.about-text,.header-text-1,.btn,.scroll-downs', {delay: 50, origin: 'bottom'});
+        ScrollReveal().reveal('.tab-titles', {delay: 0, origin: 'bottom'});
+        ScrollReveal().reveal('.services-list,.work-list,.contact-left,.contact-right', {delay: 50, origin: 'bottom'});
+    </script>
+
+  
+  <script>
+        document.getElementById('scrollToAbout').addEventListener('click', function() {
+            const aboutSection = document.getElementById('about');
+            aboutSection.scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxT9MbYB6qlWcfNDizR9BPkQ1ZNdA72Hu1NBIdPyYmLBvH17SBozMq3a4hy3Q_c6PTW/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },1000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+</body>
+</html>
